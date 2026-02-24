@@ -1,5 +1,5 @@
 class Jogador:
-    def __init__(self, poder, defesa, vida_maxima, esquiva, raca, vocacao):
+    def __init__(self, poder, defesa, vida_maxima, esquiva, raca, classe):
         self.poder = poder
         self.defesa = defesa
         self.vida_maxima = vida_maxima
@@ -8,5 +8,5 @@ class Jogador:
         self.nivel = 1
         self.exp = 0
         self.raca = raca
-        self.vocacao = vocacao
+        self.classe = classe
         self.inventario = []
