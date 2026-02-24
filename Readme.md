@@ -450,8 +450,113 @@ Deslocamento: 9m
 
 Longevidade: Até 250 anos.
 
+---
+
+## 🧝 Elfos Crepusculares
+
+Elfos são seres ligados à natureza e às energias sutis do mundo. De aparência esguia e traços delicados, possuem sentidos aguçados e forte conexão espiritual com o ambiente ao seu redor.
+Vivem em florestas antigas ou regiões isoladas, onde preservam tradições mágicas e conhecimentos ancestrais.
+São naturalmente ágeis e inclinados à magia.
+
+#### 📖 Habilidades de Raça:
+
+***Destreza +2, Inteligência +1, Constituição –1***
+
+- Visão na Penumbra.
+> Enxerga normalmente em ambientes com pouca luz.
+
+- Afinidade Mística.
+> Redução no custo de habilidades mágicas básicas.
+
+- Sentidos Aguçados.
+> Bônus em Percepção.
+
+Deslocamento: 9m
+
+Longevidade: Até 180 anos.
+
+---
+
+## 🧊 Jotunn
+
+Descendentes de gigantes ancestrais das regiões geladas, Jotunn são imponentes e fisicamente superiores à maioria das outras raças.
+Sua pele pode ter tons pálidos ou azulados, e seus olhos lembram gelo rachado. Muitos vivem isolados, mas alguns buscam provar seu valor entre outros povos.
+São naturalmente fortes e resistentes ao frio.
+
+#### 📖 Habilidades de Raça:
+
+***Força +2, Constituição +1, Destreza –1***
+
+- Sangue Glacial.
+> Resistência a dano de frio.
+
+- Presença Intimidante.
+> Bônus em testes de Intimidação.
+
+- Estrutura Massiva.
+> Recebe bônus em testes de força para empurrar ou derrubar.
+
+Deslocamento: 9m
+
+Longevidade: Semelhante à humana.
+
+---
+
+## 👻 Draugr
+
+Draugr são mortos que retornaram com consciência e vontade própria. Diferente de mortos-vivos comuns, mantêm personalidade e memória de suas vidas passadas.
+Sua aparência é pálida, com traços rígidos e olhos sem brilho. São temidos e muitas vezes rejeitados, mas podem ser aliados poderosos.
+Possuem resistência sobrenatural, mas também carregam o peso da morte.
+
+#### 📖 Habilidades de Raça:
+
+***Constituição +2, Sabedoria +1, Carisma –2***
+
+- Corpo Inerte.
+> Resistência a dano físico não mágico.
+
+- Natureza Incansável.
+> Não precisa respirar nem comer.
+
+- Presença Sombria.
+> Bônus em testes para causar medo.
+
+- Vulnerabilidade Sagrada.
+> Sofre dano adicional de efeitos sagrados.
+
+Deslocamento: 9m
+
+Longevidade: Indefinida.
+
+---
+
+## 🐺 Metamorfo
+
+Metamorfos são humanos com sangue bestial em suas veias. Diz-se que seus ancestrais vestiam peles de feras em rituais antigos e jamais abandonaram completamente essa conexão.
+Em momentos de tensão, seus instintos despertam, revelando presas afiadas, olhos selvagens e força ampliada.
+Vivem entre humanos, mas raramente são totalmente aceitos.
+
+#### 📖 Habilidades de Raça:
+
+***Força +1, Destreza +1***
+
+- Forma Bestial.
+> Uma vez por combate, pode assumir forma parcial bestial por alguns turnos, recebendo bônus em ataque corpo a corpo.
+
+- Instinto Predador.
+> Bônus em Percepção e Sobrevivência.
+
+- Garras Naturais.
+> Possui ataque natural leve.
+
+Deslocamento: 9m
+
+Longevidade: Semelhante à humana.
+
+---
+
 ## 🤝 Autores
-#### *Pedro Henrique Nascimento da Silva, Lucas Tadashi Azambuja Miasaki, Henry Youji*
+#### *Pedro Henrique Nascimento da Silva, Lucas Tadashi Azambuja Miasaki, Henry Youji Oseki*
 
 ## 📝 Licença
 
