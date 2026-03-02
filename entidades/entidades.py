@@ -6,11 +6,14 @@ class Entidade:
         self.vida_atual = vida_maxima
         self.esquiva = esquiva
     
-    def to_vivo(self):
-        if self.vida_atual > 0:
+    def vivo(self):
+        return self.vida_atual > 0
+    
+    def status(self):
+        if self.vivo():
             print(f"vivo: {self.vida_atual}/{self.vida_maxima}")
         else:
             print(f"morto: {self.vida_atual}/{self.vida_maxima}")
 
 vivo = Entidade(10, 5, 18, 0.2)
-vivo.to_vivo()
+vivo.status()

@@ -5,4 +5,3 @@ class Jogador(Entidade):
         super().__init__(poder, defesa, vida_maxima, esquiva)
         self.raca = raca
         self.classe = classe
-
