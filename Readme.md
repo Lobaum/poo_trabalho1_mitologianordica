@@ -51,11 +51,11 @@ Este projeto foi desenvolvido como parte de um **trabalho acadêmico da faculdad
 
 ### Características de Classe:
 
-> **Pontos de Vida: 14 PV + Constituição no 1º nível +4 PV + Constituição por nível seguinte**
+> **Pontos de Vida: 14 PV. +4 PV por nível**
 
 > **Pontos de Energia (PE): 3 por nível**
 
-> **Perícias: Luta (For) e Atletismo (For), mais 3 à escolha entre: Intimidação (Car), Guerra (Int), Iniciativa (Des), Percepção (Sab), Sobrevivência (Sab), Reflexos (Des)**
+<!-- > **Perícias: Luta (For) e Atletismo (For), mais 3 à escolha entre: Intimidação (Car), Guerra (Int), Iniciativa (Des), Percepção (Sab), Sobrevivência (Sab), Reflexos (Des)** -->
 
 > **Proficiências: Armas marciais, escudos e armaduras médias/pesadas**
 
@@ -81,16 +81,13 @@ Este projeto foi desenvolvido como parte de um **trabalho acadêmico da faculdad
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-10 PV + Constituição no 1º nível
-+3 PV + Constituição por nível**
+> **Pontos de Vida: 10 PV. +3 PV por nível**
 
-> **Pontos de Energia (PE):
-5 por nível**
+> **Pontos de Energia (PE): 5 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Ocultismo (Int) e Vontade (Sab), mais 3 à escolha entre:
-Intuição (Sab), Religião (Sab), Ofício (Int), Percepção (Sab), Diplomacia (Car)**
+Intuição (Sab), Religião (Sab), Ofício (Int), Percepção (Sab), Diplomacia (Car)** -->
 
 > **Proficiências:
 Armas simples, armaduras leves**
@@ -117,16 +114,13 @@ Armas simples, armaduras leves**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-12 PV + Constituição no 1º nível
-+3 PV + Constituição por nível`**
+> **Pontos de Vida: 12 PV. +3 PV por nível`**
 
-> **Pontos de Energia (PE):
-4 por nível**
+> **Pontos de Energia (PE): 4 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Iniciativa (Des) e Reflexos (Des), mais 4 à escolha entre:
-Furtividade (Des), Percepção (Sab), Acrobacia (Des), Intuição (Sab), Sobrevivência (Sab)**
+Furtividade (Des), Percepção (Sab), Acrobacia (Des), Intuição (Sab), Sobrevivência (Sab)** -->
 
 > **Proficiências:
 Armas leves, armaduras leves**
@@ -151,16 +145,13 @@ Armas leves, armaduras leves**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-13 PV + Constituição no 1º nível
-+4 PV + Constituição por nível`**
+> **Pontos de Vida: 13 PV. +4 PV por nível`**
 
-> **Pontos de Energia (PE):
-3 por nível**
+> **Pontos de Energia (PE): 3 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Sobrevivência (Sab) e Pontaria (Des), mais 3 à escolha entre:
-Percepção (Sab), Atletismo (For), Intuição (Sab), Guerra (Int)**
+Percepção (Sab), Atletismo (For), Intuição (Sab), Guerra (Int)** -->
 
 > **Proficiências:
 Armas marciais, arcos, armaduras médias**
@@ -185,16 +176,13 @@ Armas marciais, arcos, armaduras médias**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-9 PV + Constituição no 1º nível
-+3 PV + Constituição por nível**
+> **Pontos de Vida: 9 PV. +3 PV por nível**
 
-> **Pontos de Energia (PE):
-6 por nível**
+> **Pontos de Energia (PE): 6 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Vontade (Sab) e Intuição (Sab), mais 3 à escolha entre:
-Ocultismo (Int), Religião (Sab), Diplomacia (Car), Percepção (Sab)**
+Ocultismo (Int), Religião (Sab), Diplomacia (Car), Percepção (Sab)** -->
 
 > **Proficiências:
 Armas simples, nenhuma armadura**
@@ -221,16 +209,13 @@ Armas simples, nenhuma armadura**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-13 PV + Constituição no 1º nível
-+4 PV + Constituição por nível**
+> **Pontos de Vida: 13 PV. +4 PV por nível**
 
-> **Pontos de Energia (PE):
-4 por nível**
+> **Pontos de Energia (PE): 4 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Ofício (Int) e Guerra (Int), mais 3 à escolha entre:
-Atletismo (For), Intimidação (Car), Percepção (Sab)**
+Atletismo (For), Intimidação (Car), Percepção (Sab)** -->
 
 > **Proficiências:
 Armas marciais, armaduras médias e pesadas**
@@ -259,16 +244,13 @@ Armas marciais, armaduras médias e pesadas**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-12 PV + Constituição no 1º nível
-+3 PV + Constituição por nível**
+> **Pontos de Vida: 12 PV. +3 PV por nível**
 
-> **Pontos de Energia (PE):
-4 por nível**
+> **Pontos de Energia (PE): 4 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Iniciativa (Des) e Intuição (Sab), mais 3 à escolha entre:
-Atletismo (For), Percepção (Sab), Reflexos (Des), Sobrevivência (Sab), Guerra (Int)**
+Atletismo (For), Percepção (Sab), Reflexos (Des), Sobrevivência (Sab), Guerra (Int)** -->
 
 > **Proficiências:
 Armas marciais, armaduras médias**
@@ -291,16 +273,13 @@ Armas marciais, armaduras médias**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-16 PV + Constituição no 1º nível
-+5 PV + Constituição por nível**
+> **Pontos de Vida: 16 PV. +5 PV por nível**
 
-> **Pontos de Energia (PE):
-3 por nível**
+> **Pontos de Energia (PE): 3 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Vontade (Sab) e Intimidação (Car), mais 3 à escolha entre:
-Religião (Sab), Percepção (Sab), Guerra (Int), Atletismo (For)**
+Religião (Sab), Percepção (Sab), Guerra (Int), Atletismo (For)** -->
 
 > **Proficiências:
 Armas marciais, escudos e armaduras pesadas**
@@ -323,16 +302,13 @@ Armas marciais, escudos e armaduras pesadas**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-13 PV + Constituição no 1º nível
-+4 PV + Constituição por nível**
+> **Pontos de Vida: 13 PV. +4 PV por nível**
 
-> **Pontos de Energia (PE):
-4 por nível**
+> **Pontos de Energia (PE): 4 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Luta (For) e Sobrevivência (Sab), mais 3 à escolha entre:
-Atletismo (For), Percepção (Sab), Intimidação (Car), Reflexos (Des)**
+Atletismo (For), Percepção (Sab), Intimidação (Car), Reflexos (Des)** -->
 
 > **Proficiências:
 Armas marciais, armaduras médias**
@@ -355,16 +331,13 @@ Armas marciais, armaduras médias**
 
 ### Características de Classe:
 
-> **Pontos de Vida:
-11 PV + Constituição no 1º nível
-+3 PV + Constituição por nível**
+> **Pontos de Vida: 11 PV. +3 PV por nível**
 
-> **Pontos de Energia (PE):
-5 por nível**
+> **Pontos de Energia (PE): 5 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Sobrevivência (Sab) e Percepção (Sab), mais 3 à escolha entre:
-Intuição (Sab), Religião (Sab), Atletismo (For), Diplomacia (Car)**
+Intuição (Sab), Religião (Sab), Atletismo (For), Diplomacia (Car)** -->
 
 > **Proficiências:
 Armas simples, armaduras leves**
@@ -387,13 +360,13 @@ Armas simples, armaduras leves**
 
 ### Características de Classe:
 
-> **Pontos de Vida: 15 PV + Constituição no 1º nível +5 PV + Constituição por nível**
+> **Pontos de Vida: 15 PV. +2 PV por nível**
 
 > **Pontos de Energia (PE): 3 por nível**
 
-> **Perícias:
+<!-- > **Perícias:
 Atletismo (For) e Guerra (Int), mais 3 à escolha entre:
-Intimidação (Car), Luta (For), Percepção (Sab), Ofício (Int)**
+Intimidação (Car), Luta (For), Percepção (Sab), Ofício (Int)** -->
 
 > **Proficiências:
 Armas pesadas, escudos, armaduras pesadas**
@@ -410,7 +383,7 @@ Humanos costumam se destacar em qualquer classe, moldando-se conforme a necessid
 
 #### 📖 Habilidades de Raça:
 
-***+1 em qualquer atributo à escolha***
+***+3 em qualquer atributo à escolha***
 
 - Adaptabilidade.
 > Uma vez por descanso, pode rerrolar um teste de atributo.
@@ -435,7 +408,7 @@ São naturalmente resistentes e difíceis de derrubar.
 
 #### 📖 Habilidades de Raça:
 
-***Constituição +2, Força +1, Carisma –1***
+***Esquiva +3, Poder +1, Defesa –1, Vida +2***
 
 - Resistência Ancestral.
 > Resistência a veneno.
@@ -460,7 +433,7 @@ São naturalmente ágeis e inclinados à magia.
 
 #### 📖 Habilidades de Raça:
 
-***Destreza +2, Inteligência +1, Constituição –1***
+***Esquiva +2, Poder +2***
 
 - Visão na Penumbra.
 > Enxerga normalmente em ambientes com pouca luz.
@@ -485,7 +458,7 @@ São naturalmente fortes e resistentes ao frio.
 
 #### 📖 Habilidades de Raça:
 
-***Força +2, Constituição +1, Destreza –1***
+***Poder +2, Defesa +2, Vida +2***
 
 - Sangue Glacial.
 > Resistência a dano de frio.
@@ -510,7 +483,7 @@ Possuem resistência sobrenatural, mas também carregam o peso da morte.
 
 #### 📖 Habilidades de Raça:
 
-***Constituição +2, Sabedoria +1, Carisma –2***
+***Esquiva +1, Poder +2, Vida +3***
 
 - Corpo Inerte.
 > Resistência a dano físico não mágico.
@@ -538,7 +511,7 @@ Vivem entre humanos, mas raramente são totalmente aceitos.
 
 #### 📖 Habilidades de Raça:
 
-***Força +1, Destreza +1***
+***Esquiva +2, Poder +2, Vida +1***
 
 - Forma Bestial.
 > Uma vez por combate, pode assumir forma parcial bestial por alguns turnos, recebendo bônus em ataque corpo a corpo.
