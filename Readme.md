@@ -383,13 +383,13 @@ Humanos costumam se destacar em qualquer classe, moldando-se conforme a necessid
 
 #### 📖 Habilidades de Raça:
 
-***+3 em qualquer atributo à escolha***
+***Poder 10, Defesa 5, Vida +1, Esquiva 1***
 
 - Adaptabilidade.
 > Uma vez por descanso, pode rerrolar um teste de atributo.
 
 - Versatilidade Natural.
-> Ganha proficiência adicional em uma perícia à escolha.
+> Ganha +5 em atributos (Poder, Defesa, Vida, Esquiva).
 
 - Tenacidade.
 > Uma vez por descanso, ao cair a 0 PV, permanece com 1 PV.
@@ -408,7 +408,7 @@ São naturalmente resistentes e difíceis de derrubar.
 
 #### 📖 Habilidades de Raça:
 
-***Esquiva +3, Poder +1, Defesa –1, Vida +2***
+***Poder  12, Defesa 10, Vida +2, Esquiva 3***
 
 - Resistência Ancestral.
 > Resistência a veneno.
@@ -433,7 +433,7 @@ São naturalmente ágeis e inclinados à magia.
 
 #### 📖 Habilidades de Raça:
 
-***Esquiva +2, Poder +2***
+***Poder 12, Defesa 7, Vida +2, Esquiva 2***
 
 - Visão na Penumbra.
 > Enxerga normalmente em ambientes com pouca luz.
@@ -442,7 +442,7 @@ São naturalmente ágeis e inclinados à magia.
 > Redução no custo de habilidades mágicas básicas.
 
 - Sentidos Aguçados.
-> Bônus em Percepção.
+> Ganha +4 em Poder.
 
 Deslocamento: 9m
 
@@ -458,16 +458,16 @@ São naturalmente fortes e resistentes ao frio.
 
 #### 📖 Habilidades de Raça:
 
-***Poder +2, Defesa +2, Vida +2***
+***Poder 20, Defesa 7, Vida +2, Esquiva 0***
 
 - Sangue Glacial.
 > Resistência a dano de frio.
 
 - Presença Intimidante.
-> Bônus em testes de Intimidação.
+> Ganha +1 em Esquiva.
 
 - Estrutura Massiva.
-> Recebe bônus em testes de força para empurrar ou derrubar.
+> Ganha +3 em Defesa.
 
 Deslocamento: 9m
 
@@ -483,7 +483,7 @@ Possuem resistência sobrenatural, mas também carregam o peso da morte.
 
 #### 📖 Habilidades de Raça:
 
-***Esquiva +1, Poder +2, Vida +3***
+***Poder 10, Defesa 15, Vida +3, Esquiva 1***
 
 - Corpo Inerte.
 > Resistência a dano físico não mágico.
@@ -492,10 +492,10 @@ Possuem resistência sobrenatural, mas também carregam o peso da morte.
 > Não precisa respirar nem comer.
 
 - Presença Sombria.
-> Bônus em testes para causar medo.
+> Ganha +3 em vida.
 
 - Vulnerabilidade Sagrada.
-> Sofre dano adicional de efeitos sagrados.
+> Caso o inimigo acerte um crítico, sofre o triplo do dano.
 
 Deslocamento: 9m
 
@@ -511,16 +511,13 @@ Vivem entre humanos, mas raramente são totalmente aceitos.
 
 #### 📖 Habilidades de Raça:
 
-***Esquiva +2, Poder +2, Vida +1***
+***Poder 15, Defesa 7, Vida +1, Esquiva 2***
 
 - Forma Bestial.
-> Uma vez por combate, pode assumir forma parcial bestial por alguns turnos, recebendo bônus em ataque corpo a corpo.
+> Uma vez por combate, pode assumir forma parcial bestial por alguns turnos, recebendo +3 em Poder.
 
 - Instinto Predador.
-> Bônus em Percepção e Sobrevivência.
-
-- Garras Naturais.
-> Possui ataque natural leve.
+> Procura por rotas de fuga (+3 em Esquiva).
 
 Deslocamento: 9m
 
