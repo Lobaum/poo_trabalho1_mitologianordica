@@ -31,7 +31,7 @@ Este projeto foi desenvolvido como parte de um **trabalho acadêmico da faculdad
 
 ## 🎓 Sobre o Projeto
 
-# ⚔️ Classes Planejadas:
+# ⚔️ Classes:
 
 ## 🪓 Quebra-Escudos
 
@@ -373,7 +373,7 @@ Armas pesadas, escudos, armaduras pesadas**
 
 ---
 
-# 🧬 Raças Planejadas:
+# 🧬 Raças:
 
 ## 🧑 Humanos
 
