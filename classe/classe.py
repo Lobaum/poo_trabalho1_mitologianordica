@@ -1,17 +1,31 @@
 class Vocacao:
-    def __init__(self, nome, pv_base, pe_por_nivel):
+    def __init__(self, nome, pv_base, pv_por_nivel, pe_por_nivel):
         self.nome = nome
         self.pv_base = pv_base
+        self.pv_por_nivel = pv_por_nivel
         self.pe_por_nivel = pe_por_nivel
 
-quebra_escudos = Vocacao("Quebra-Escudos", 14, 3)
-tecelao_runas = Vocacao("Tecelão de Runas", 10, 5)
-caminhante_nevoa = Vocacao("Caminhante da Névoa", 12, 4)
-cacador_feras = Vocacao("Caçador de Feras", 13, 3)
-portador_pressagios = Vocacao("Portador de Presságios", 9, 6)
-forjador = Vocacao("Forjador", 13, 4)
-errante = Vocacao("Errante", 12, 4)
-guardiao = Vocacao("Guardião", 16, 3)
-glacial = Vocacao("Glacial", 13, 4)
-vigia = Vocacao("Vigia", 11, 5)
-detonador = Vocacao("Detonador", 15, 3)
+classes_dados = {
+    "Quebra-Escudos": {"pv_base": 14, "pv_por_nivel": 4, "pe_por_nivel": 3},
+    "Tecelão de Runas": {"pv_base": 10, "pv_por_nivel": 3, "pe_por_nivel": 5},
+    "Caminhante da Névoa": {"pv_base": 12, "pv_por_nivel": 3, "pe_por_nivel": 4},
+    "Caçador de Feras": {"pv_base": 13, "pv_por_nivel": 4, "pe_por_nivel": 3},
+    "Portador de Presságios": {"pv_base": 9, "pv_por_nivel": 3, "pe_por_nivel": 6},
+    "Forjador": {"pv_base": 13, "pv_por_nivel": 4, "pe_por_nivel": 4},
+    "Errante": {"pv_base": 12, "pv_por_nivel": 3, "pe_por_nivel": 4},
+    "Guardião": {"pv_base": 16, "pv_por_nivel": 5, "pe_por_nivel": 3},
+    "Glacial": {"pv_base": 13, "pv_por_nivel": 4, "pe_por_nivel": 4},
+    "Vigia": {"pv_base": 11, "pv_por_nivel": 3, "pe_por_nivel": 5},
+    "Detonador": {"pv_base": 15, "pv_por_nivel": 2, "pe_por_nivel": 3},
+}
+
+lista_classes = {}
+
+for nome, dados in classes_dados.items():
+    nova_classe = Vocacao(
+        nome=nome,
+        pv_base=dados["pv_base"],
+        pv_por_nivel=dados["pv_por_nivel"],
+        pe_por_nivel=dados["pe_por_nivel"]
+    )
+    lista_classes[nome] = nova_classe
