@@ -1,12 +1,13 @@
 import random
 
 class Entidade:
-    def __init__(self, poder, defesa, vida_maxima:int, esquiva):
+    def __init__(self, poder, defesa, vida_maxima:int, esquiva, energia):
         self.poder = poder
         self.defesa = defesa
         self.vida_maxima = vida_maxima
         self.vida_atual = vida_maxima
         self.esquiva = esquiva
+        self.energia = energia
     
     def vivo(self):
         return self.vida_atual > 0
@@ -44,11 +45,3 @@ class Entidade:
     def receber_dano(self, dano):
         self.vida_atual = self.vida_atual - dano
         self.vida_atual = max(0, self.vida_atual)
-        
-
-
-MC = Entidade(15, 10, 30, 2)
-
-Inimigo = Entidade(12, 5, 25, 2)
-
-MC.atacar(Inimigo)
