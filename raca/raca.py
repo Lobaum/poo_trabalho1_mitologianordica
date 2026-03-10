@@ -35,7 +35,7 @@ racas_dados = {
         "Poder": 10,
         "Defesa": 15,
         "Esquiva": 1,
-        "Bonus_Vida": 3
+        "Bonus_Vida": 5
     },
     "Metamorfo": {
         "Poder": 15,
