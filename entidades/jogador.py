@@ -1,12 +1,13 @@
 from entidades.entidades import Entidade
 
 class Jogador(Entidade):
-    def __init__(self, poder, defesa, vida_maxima, esquiva, energia, exp, raca, vocacao, pocao):
+    def __init__(self, poder, defesa, vida_maxima, esquiva, energia, exp, raca, vocacao, pocao, nome):
         super().__init__(poder, defesa, vida_maxima, esquiva, energia)
         self.raca = raca
         self.vocacao = vocacao
         self.pocao = pocao
         self.exp = exp
+        self.nome = nome
 
 
     def usar_pocao(self):

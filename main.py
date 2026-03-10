@@ -15,6 +15,8 @@ def criar_personagem():
     print("\nBem vindo ao menu de criação de personagem!!")
     input("Pressione Enter para iniciar o jogo: ")
 
+    nome_personagem = input("\nDigite o nome do seu personagem: ")
+
     print("\nSelecione sua raça")
     print("Raças:\n1) Humanos\n2) Anões do Norte\n3) Elfos Crepusculares\n4) Jotunn\n5) Draugr\n6) Metamorfo")
     escolha_raca = input("Escolha sua Raça: ")
@@ -41,20 +43,29 @@ def criar_personagem():
     energia_calculada = vocacao_escolhida["pe_por_nivel"]
 
     player = Jogador(
+        nome=nome_personagem,
         poder=raca_escolhida["Poder"],      
         defesa=raca_escolhida["Defesa"],    
         vida_maxima=vida_calculada,      
         esquiva=raca_escolhida["Esquiva"],  
         energia=energia_calculada,       
-        raca=raca_escolhida,
-        vocacao=vocacao_escolhida,
+        raca=racas_disponiveis[escolha_raca],
+        vocacao=classes_disponiveis[escolha_classe],
         pocao=3,
         exp=0
     )
-
-    print(f"Herói criado! Vida total: {player.vida_maxima}")
 
     return player
 
 
 teste = criar_personagem()
+print(f"""\n{teste.nome}, aqui é onde começa sua jornada. Esses são seus atributos base:
+Vida: {teste.vida_maxima}
+Energia: {teste.energia}
+Poder: {teste.poder}
+Defesa: {teste.defesa}
+Esquiva: {teste.esquiva}
+Raça: {teste.raca}
+Classe: {teste.vocacao}
+Poções Disponíveis: {teste.pocao}
+EXP: {teste.exp}""")
