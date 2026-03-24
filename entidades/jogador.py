@@ -1,4 +1,6 @@
-from entidades.entidades import Entidade
+import math
+from .entidades import Entidade
+from progressao_de_level import calcular_exp_necessaria, evoluir_atributos
 
 class Jogador(Entidade):
     def __init__(self, poder, defesa, vida_atual, vida_maxima, esquiva, energia, exp, raca, vocacao, pocao, nome):
@@ -6,9 +8,9 @@ class Jogador(Entidade):
         self.raca = raca
         self.vocacao = vocacao
         self.pocao = pocao
-        self.exp = exp
+        self.exp = max(0, exp)
         self.nome = nome
-
+        self.nivel = 1
 
     def usar_pocao(self):
         if self.pocao > 0:
@@ -17,3 +19,18 @@ class Jogador(Entidade):
             print(f"Você usou uma poção! Vida atual: {self.vida_atual}, Poções restantes: {self.pocao}")
         else:
             print("Você não tem poções para usar!")
+
+    def ganhar_experiencia(self, quantidade):
+        self.exp += quantidade
+        self.verificar_level_up()
+
+    def verificar_level_up(self):
+        exp_necessaria = calcular_exp_necessaria(self.nivel)
+        while self.exp >= exp_necessaria:
+            self.exp -= exp_necessaria
+            self.subir_de_nivel()
+            exp_necessaria = calcular_exp_necessaria(self.nivel)
+
+    def subir_de_nivel(self):
+        self.nivel += 1
+        evoluir_atributos(self)

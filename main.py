@@ -1,5 +1,5 @@
 from entidades.jogador import Jogador
-from entidades.inimigo import spawn_inimigo
+from entidades.inimigo import spawn_inimigo_por_nivel
 from combate.combate import iniciar_combate
 from classe.classe import classes_dados
 from raca.raca import racas_dados
@@ -74,17 +74,18 @@ while player.vida_maxima > 0:
         print("\nVocê caminha com cuidado pela região...")
         chance = random.randint(1, 2)
         if chance == 1:
-            print("De repente, um inimigo surge das sombras!")
-            monstro = spawn_inimigo(21)
+            monstro = spawn_inimigo_por_nivel(player.nivel)
+            print(f"De repente, um {monstro.nome} surge das sombras!")
+            print(f"Vida: {monstro.vida_atual}/{monstro.vida_maxima}")
             iniciar_combate(player, monstro)
         else:
-            print("Tudo calmo. Você encontra apenas folhas secas e silêncio.")
+            print("Tudo calmo. Você encontra apenas neve em sua frente e ruínas congeladas.")
         
     elif acao == "2":
         print("\nVocê monta um pequeno acampamento e descansa perto da fogueira...")
         
-        cura_vida = 15
-        cura_energia = 10
+        cura_vida = 7
+        cura_energia = 3
         player.vida_atual += cura_vida 
         if player.vida_atual > player.vida_maxima:
             player.vida_atual = player.vida_maxima
@@ -104,7 +105,8 @@ Esquiva: {player.esquiva}
 Raça: {player.raca}
 Classe: {player.vocacao}
 Poções Disponíveis: {player.pocao}
-EXP: {player.exp}""")
+EXP: {player.exp}
+Nível: {player.nivel}""")
         
     else:
         print("\nAção inválida. Escolha 1, 2 ou 3.")

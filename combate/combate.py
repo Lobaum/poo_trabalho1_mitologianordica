@@ -22,7 +22,7 @@ def iniciar_combate(jogador, inimigo):
             print(f"D20 = {d20}")
             if d20 + jogador.esquiva >= 15:
                 print(f"Você Fugiu")
-                break
+                return
             else:
                 print(f"Você tentou fugir, mas o inimigo foi mais ligeiro")
         else:
@@ -31,10 +31,12 @@ def iniciar_combate(jogador, inimigo):
         if inimigo.vivo():
             print("\nTurno do inimigo!")
             inimigo.atacar(jogador)
+            print(f"{inimigo.nome} te atacou!")
     
-    if jogador.vivo():
+    if jogador.vivo() and not inimigo.vivo():
         print("Você venceu o combate!")
-        jogador.exp += inimigo.exp_recompensa
+        jogador.ganhar_experiencia(inimigo.exp_recompensa)
         print(f"Você ganhou {inimigo.exp_recompensa} pontos de experiência!")
-    else:
+    
+    elif not jogador.vivo():
         print("Você foi derrotado no combate.")

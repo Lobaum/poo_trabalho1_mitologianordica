@@ -106,3 +106,14 @@ def spawn_inimigo(id_inimigo):
         dificuldade=molde['Dificuldade']
     )
     return inimigo_gerado
+
+def spawn_inimigo_por_nivel(nivel_jogador):
+    if nivel_jogador < 5:
+        dificuldade = "Fácil"
+    elif nivel_jogador < 10:
+        dificuldade = "Médio"
+    else:
+        dificuldade = "Difícil"
+
+    ids_validos = [id_key for id_key, info in bichos.items() if info["Dificuldade"] == dificuldade]
+    return spawn_inimigo(random.choice(ids_validos))
