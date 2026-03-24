@@ -1,7 +1,7 @@
 import random
 
 class Entidade:
-    def __init__(self, poder, defesa, vida_maxima:int, esquiva, energia):
+    def __init__(self, poder, defesa, vida_atual:int, vida_maxima:int, esquiva, energia):
         self.poder = poder
         self.defesa = defesa
         self.vida_maxima = vida_maxima

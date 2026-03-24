@@ -47,7 +47,8 @@ def criar_personagem():
         nome=nome_personagem,
         poder=raca_escolhida["Poder"],      
         defesa=raca_escolhida["Defesa"],    
-        vida_maxima=vida_calculada,      
+        vida_maxima=vida_calculada,   
+        vida_atual=vida_calculada,   
         esquiva=raca_escolhida["Esquiva"],  
         energia=energia_calculada,       
         raca=racas_disponiveis[escolha_raca],
@@ -80,11 +81,22 @@ while player.vida_maxima > 0:
             print("Tudo calmo. Você encontra apenas folhas secas e silêncio.")
         
     elif acao == "2":
-        print("\nVocê descansa perto da fogueira...")
+        print("\nVocê monta um pequeno acampamento e descansa perto da fogueira...")
+        
+        cura_vida = 15
+        cura_energia = 10
+        player.vida_atual += cura_vida 
+        if player.vida_atual > player.vida_maxima:
+            player.vida_atual = player.vida_maxima
+        player.energia += cura_energia
+
+        
+        print(f"Você recuperou suas forças!")
+        print(f"Status Atual -> Vida: {player.vida_atual}/{player.vida_maxima} | Energia: {player.energia}")
         
     elif acao == "3":
         print(f"""\n{player.nome}, esses são seus status:
-Vida: {player.vida_maxima}
+Vida: {player.vida_atual}/{player.vida_maxima}
 Energia: {player.energia}
 Poder: {player.poder}
 Defesa: {player.defesa}

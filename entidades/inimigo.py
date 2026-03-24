@@ -2,8 +2,8 @@ from entidades.entidades import Entidade
 import random
 
 class Inimigo(Entidade):
-    def __init__(self, nome, poder, defesa, vida_maxima, esquiva, energia, exp_recompensa, dificuldade):
-        super().__init__(poder, defesa, vida_maxima, esquiva, energia)
+    def __init__(self, nome, poder, defesa, vida_atual,vida_maxima, esquiva, energia, exp_recompensa, dificuldade):
+        super().__init__(poder, defesa, vida_atual, vida_maxima, esquiva, energia)
         self.nome = nome
         self.exp_recompensa = exp_recompensa
         self.dificuldade = dificuldade
@@ -91,12 +91,15 @@ def spawn_inimigo(id_inimigo):
     
     if not molde:
         return None
-        
+
+    vida_rolada = random.randint(*molde['Vida'])
+
     inimigo_gerado = Inimigo(
         nome=molde['Nome'],
         poder=random.randint(*molde['Poder']),
         defesa=random.randint(*molde['Defesa']),
-        vida_maxima=random.randint(*molde['Vida']),
+        vida_atual=vida_rolada,
+        vida_maxima=vida_rolada,
         esquiva=random.randint(*molde['Esquiva']),
         energia=random.randint(*molde['Energia']),
         exp_recompensa=molde['EXP'],
