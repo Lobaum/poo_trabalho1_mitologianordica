@@ -3,6 +3,7 @@ from entidades.inimigo import spawn_inimigo
 from combate.combate import iniciar_combate
 from classe.classe import classes_dados
 from raca.raca import racas_dados
+import random
 
 
 def criar_personagem():
@@ -57,21 +58,41 @@ def criar_personagem():
 
     return player
 
+player = criar_personagem()
+print(f"\n{player.nome} inicia sua jornada em Eldoria!")
 
-teste = criar_personagem()
-print(f"""\n{teste.nome}, aqui é onde começa sua jornada. Esses são seus atributos base:
-Vida: {teste.vida_maxima}
-Energia: {teste.energia}
-Poder: {teste.poder}
-Defesa: {teste.defesa}
-Esquiva: {teste.esquiva}
-Raça: {teste.raca}
-Classe: {teste.vocacao}
-Poções Disponíveis: {teste.pocao}
-EXP: {teste.exp}""")
-
-print("================")
-
-adversario = spawn_inimigo(1)
-
-iniciar_combate (teste, adversario)
+while player.vida_maxima > 0:
+    print(f"\n{player.nome}, o que deseja fazer?")
+    print("1. Explorar os arredores ")
+    print("2. Montar acampamento (Descansar)")
+    print("3. Ver Status do Herói")
+    
+    acao = input("Escolha sua ação: ")
+    
+    if acao == "1":
+        print("\nVocê caminha com cuidado pela região...")
+        chance = random.randint(1, 2)
+        if chance == 1:
+            print("De repente, um inimigo surge das sombras!")
+            monstro = spawn_inimigo(21)
+            iniciar_combate(player, monstro)
+        else:
+            print("Tudo calmo. Você encontra apenas folhas secas e silêncio.")
+        
+    elif acao == "2":
+        print("\nVocê descansa perto da fogueira...")
+        
+    elif acao == "3":
+        print(f"""\n{player.nome}, esses são seus status:
+Vida: {player.vida_maxima}
+Energia: {player.energia}
+Poder: {player.poder}
+Defesa: {player.defesa}
+Esquiva: {player.esquiva}
+Raça: {player.raca}
+Classe: {player.vocacao}
+Poções Disponíveis: {player.pocao}
+EXP: {player.exp}""")
+        
+    else:
+        print("\nAção inválida. Escolha 1, 2 ou 3.")
