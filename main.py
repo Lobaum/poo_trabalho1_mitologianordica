@@ -62,7 +62,7 @@ def criar_personagem():
 player = criar_personagem()
 print(f"\n{player.nome} inicia sua jornada em Eldoria!")
 
-while player.vida_maxima > 0:
+while player.vida_atual > 0:
     print(f"\n{player.nome}, o que deseja fazer?")
     print("1. Explorar os arredores ")
     print("2. Montar acampamento (Descansar)")
