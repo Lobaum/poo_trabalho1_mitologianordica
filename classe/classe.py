@@ -6,7 +6,7 @@ class Vocacao:
         self.pe_por_nivel = pe_por_nivel
 
 classes_dados = {
-    "Quebra-Escudos": {"pv_base": 14, "pv_por_nivel": 4, "pe_por_nivel": 0},
+    "Quebra-Escudos": {"pv_base": 14, "pv_por_nivel": 4, "pe_por_nivel": 3},
     "Tecelão de Runas": {"pv_base": 10, "pv_por_nivel": 3, "pe_por_nivel": 5},
     "Caminhante da Névoa": {"pv_base": 12, "pv_por_nivel": 3, "pe_por_nivel": 4},
     "Caçador de Feras": {"pv_base": 13, "pv_por_nivel": 4, "pe_por_nivel": 3},

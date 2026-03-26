@@ -1,6 +1,8 @@
 from entidades.jogador import Jogador
+from recompensas.tesouros import AltarDeGelo
 from entidades.inimigo import spawn_inimigo_por_nivel
-from combate.combate import iniciar_combate
+from sistema.combate import iniciar_combate
+from sistema.dados import rolar_d6
 from classe.classe import classes_dados
 from raca.raca import racas_dados
 import random
@@ -54,13 +56,14 @@ def criar_personagem():
         raca=racas_disponiveis[escolha_raca],
         vocacao=classes_disponiveis[escolha_classe],
         pocao=3,
-        exp=0
+        exp=0,
+        inventario=[]
     )
 
     return player
 
 player = criar_personagem()
-print(f"\n{player.nome} inicia sua jornada em Eldoria!")
+print(f"\n{player.nome} inicia sua jornada em Asgard!")
 
 while player.vida_atual > 0:
     print(f"\n{player.nome}, o que deseja fazer?")
@@ -76,14 +79,18 @@ while player.vida_atual > 0:
         else:
             player.energia -= 1
             print("\nVocê caminha com cuidado pela região...")
-            chance = random.randint(1, 2)
-            if chance == 1:
+            d6 = rolar_d6()
+            if d6 == 1:
                 monstro = spawn_inimigo_por_nivel(player.nivel)
                 print(f"De repente, um {monstro.nome} surge das sombras!")
                 print(f"Vida: {monstro.vida_atual}/{monstro.vida_maxima}")
                 iniciar_combate(player, monstro)
-            else:
+            elif d6 <= 5:
                 print("Tudo calmo. Você encontra apenas neve em sua frente e ruínas congeladas.")
+            elif d6 == 6:
+                print(f"Quando decide entrar em uma ruína congelada em busca de recursos.")
+                evento = AltarDeGelo()
+                evento.iniciar_evento(player)
 
     elif acao == "2":
         print("\nVocê monta um pequeno acampamento e descansa perto da fogueira...")

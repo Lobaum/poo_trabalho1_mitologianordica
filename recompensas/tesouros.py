@@ -1,4 +1,6 @@
+from sistema.dados import rolar_d20, rolar_d6
 import random
+from sistema.combate import iniciar_combate
 
 class Bau:
     def __init__(self, raridade, dificuldade):
@@ -22,10 +24,10 @@ class Bau:
             
             if opcao == 'S': break
 
-            rolagem = random.randint(1, 20)
-            total = rolagem 
+            d20 = rolar_d20()
+            total = d20 
             
-            print(f"Rolagem: {rolagem} (Total: {total})")
+            print(f"Rolagem: {d20} (Total: {total})")
 
             if total >= self.dificuldade:
                 self.esta_aberto = True
@@ -43,12 +45,12 @@ class Bau:
 class AltarDeGelo:
     def __init__(self):
         self.nome = "Altar de Runas Primordiais"
-        self.dificuldade = 13
+        self.dificuldade = 15
         self.instabilidade = 0
         self.finalizado = False
 
     def iniciar_evento(self, aventureiro):
-        print(f"\nVOCÊ SE APROXIMA DO: {self.nome}")
+        print(f"\nVOCÊ SE APROXIMA DE UM: {self.nome}")
         print("As runas pulsam. Você pode tentar extrair poder ou recuar.")
 
         while self.instabilidade < 3 and not self.finalizado:
@@ -59,11 +61,11 @@ class AltarDeGelo:
                 print("Você sentiu o perigo e decidiu recuar.")
                 break
 
-            dado = random.randint(1, 20)
-            bonus = 4 if aventureiro.classe_nome == "Tecelão de Runas" else 0
-            total = dado + bonus
+            d20 = rolar_d20()
+            bonus = 4 if aventureiro.vocacao == "Tecelão de Runas" else 0
+            total = d20 + bonus
 
-            print(f"Rolagem: {dado} + Bônus: {bonus} = Total: {total}")
+            print(f"Rolagem: {d20} + Bônus: {bonus} = Total: {total}")
 
             if total >= self.dificuldade:
                 print("SUCESSO! Uma aura azul te envolve. (+2 de Poder)")
@@ -74,10 +76,6 @@ class AltarDeGelo:
                 print("FALHA! O gelo ao redor do altar começa a rachar...")
 
         if self.instabilidade >= 3:
-            print("\n" + "!" * 40)
             print("O ALTAR EXPLODIU EM ENERGIA SOMBRIA!")
-            print("A falha despertou um DRAUGR que estava selado no gelo!")
-            print("--- INICIANDO COMBATE ---")
-            print("!" * 40)
             self.finalizado = True
 

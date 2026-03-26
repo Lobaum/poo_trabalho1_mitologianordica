@@ -1,9 +1,9 @@
 import math
 from .entidades import Entidade
-from progressao_de_level import calcular_exp_necessaria, evoluir_atributos
+from sistema.progressao_de_level import calcular_exp_necessaria, evoluir_atributos
 
 class Jogador(Entidade):
-    def __init__(self, poder, defesa, vida_atual, vida_maxima, esquiva, energia, energia_maxima, exp, raca, vocacao, pocao, nome):
+    def __init__(self, poder, defesa, vida_atual, vida_maxima, esquiva, energia, energia_maxima, exp, raca, vocacao, pocao, inventario, nome):
         super().__init__(poder, defesa, vida_atual, vida_maxima, esquiva, energia)
         self.raca = raca
         self.vocacao = vocacao
@@ -12,6 +12,7 @@ class Jogador(Entidade):
         self.nome = nome
         self.nivel = 1
         self.energia_maxima = energia_maxima
+        self.inventario = inventario
 
     def usar_pocao(self):
         if self.pocao > 0:
