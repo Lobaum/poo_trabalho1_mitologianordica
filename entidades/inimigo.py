@@ -112,8 +112,10 @@ def spawn_inimigo_por_nivel(nivel_jogador):
         dificuldade = "Fácil"
     elif nivel_jogador < 10:
         dificuldade = "Médio"
-    else:
+    elif nivel_jogador < 20:
         dificuldade = "Difícil"
+    else:
+        dificuldade ="Boss"
 
     ids_validos = [id_key for id_key, info in bichos.items() if info["Dificuldade"] == dificuldade]
     return spawn_inimigo(random.choice(ids_validos))

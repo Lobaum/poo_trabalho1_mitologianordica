@@ -41,7 +41,6 @@ def criar_personagem():
 
 
     vida_calculada = vocacao_escolhida["pv_base"] + raca_escolhida["Bonus_Vida"]
-    energia_calculada = vocacao_escolhida["pe_por_nivel"]
 
     player = Jogador(
         nome=nome_personagem,
@@ -50,7 +49,8 @@ def criar_personagem():
         vida_maxima=vida_calculada,   
         vida_atual=vida_calculada,   
         esquiva=raca_escolhida["Esquiva"],  
-        energia=energia_calculada,       
+        energia=vocacao_escolhida["pe_por_nivel"],
+        energia_maxima=vocacao_escolhida["pe_por_nivel"],
         raca=racas_disponiveis[escolha_raca],
         vocacao=classes_disponiveis[escolha_classe],
         pocao=3,
@@ -71,16 +71,20 @@ while player.vida_atual > 0:
     acao = input("Escolha sua ação: ")
     
     if acao == "1":
-        print("\nVocê caminha com cuidado pela região...")
-        chance = random.randint(1, 2)
-        if chance == 1:
-            monstro = spawn_inimigo_por_nivel(player.nivel)
-            print(f"De repente, um {monstro.nome} surge das sombras!")
-            print(f"Vida: {monstro.vida_atual}/{monstro.vida_maxima}")
-            iniciar_combate(player, monstro)
+        if player.energia <= 0:
+            print(f"\n{player.nome}, você precisa descansar para continuar (Energia: {player.energia})")
         else:
-            print("Tudo calmo. Você encontra apenas neve em sua frente e ruínas congeladas.")
-        
+            player.energia -= 1
+            print("\nVocê caminha com cuidado pela região...")
+            chance = random.randint(1, 2)
+            if chance == 1:
+                monstro = spawn_inimigo_por_nivel(player.nivel)
+                print(f"De repente, um {monstro.nome} surge das sombras!")
+                print(f"Vida: {monstro.vida_atual}/{monstro.vida_maxima}")
+                iniciar_combate(player, monstro)
+            else:
+                print("Tudo calmo. Você encontra apenas neve em sua frente e ruínas congeladas.")
+
     elif acao == "2":
         print("\nVocê monta um pequeno acampamento e descansa perto da fogueira...")
         
@@ -90,6 +94,8 @@ while player.vida_atual > 0:
         if player.vida_atual > player.vida_maxima:
             player.vida_atual = player.vida_maxima
         player.energia += cura_energia
+        if player.energia > player.energia_maxima:
+            player.energia = player.energia_maxima
 
         
         print(f"Você recuperou suas forças!")
@@ -98,7 +104,7 @@ while player.vida_atual > 0:
     elif acao == "3":
         print(f"""\n{player.nome}, esses são seus status:
 Vida: {player.vida_atual}/{player.vida_maxima}
-Energia: {player.energia}
+Energia: {player.energia} / {player.energia_maxima}
 Poder: {player.poder}
 Defesa: {player.defesa}
 Esquiva: {player.esquiva}
