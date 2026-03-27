@@ -24,14 +24,17 @@ Este projeto foi desenvolvido como parte de um **trabalho acadêmico da faculdad
 
 ## 📌 Funcionalidades Implementadas
 
-- 🤠 **Base Jogador**
-- 👺 **Base inimigos**
+- 🤠 **Criação de personagem**
+- 👺 **+100 inimigos**
+- ⚔ **Combate por turnos**
+- 📦 **Sistema de loot**
+- 🗺 **Exploração de biomas**
 
 ---
 
 ## 🎓 Sobre o Projeto
 
-# ⚔️ Classes Planejadas:
+# ⚔️ Classes:
 
 ## 🪓 Quebra-Escudos
 
@@ -373,7 +376,7 @@ Armas pesadas, escudos, armaduras pesadas**
 
 ---
 
-# 🧬 Raças Planejadas:
+# 🧬 Raças:
 
 ## 🧑 Humanos
 
